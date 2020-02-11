@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <style>
@@ -52,6 +53,13 @@
                     <li class="nav-item nav-link">
                         @Html.ActionLink("Enrollment", "Index", "Enrollment")
                     </li>
+                    <li class="nav-item nav-link">
+                        @Html.ActionLink("Display Students", "Display", "Student")
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item nav-link"><a href="#"><i class="fas fa-registered"></i>Register</a></li>
+                    <li class="nav-item nav-link"><a href="#"><i class="fas fa-sign-in-alt"></i>Login</a></li>
                 </ul>
             </div>
         </nav>
